@@ -1,0 +1,52 @@
+.tripsCenteredButton {
+    display: flex;
+    justify-content: center;
+}
+
+.tripList-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tripList-container{
+    display: grid;
+    margin: 1em;
+    grid-gap: 1em;
+    align-self: center;
+    justify-self: center;
+}
+
+.tripList-container{
+    grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 660px) {
+    .tripList-container{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 661px) {
+    .tripList-container{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1023px) {
+    .tripList-container{
+        grid-template-columns:repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1400px) {
+    .tripList-container{
+        grid-template-columns:repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 1750px) {
+    .tripList-container{
+        grid-template-columns:repeat(5, 1fr);
+    }
+}

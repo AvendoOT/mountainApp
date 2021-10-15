@@ -1,0 +1,329 @@
+@media only screen and (max-width: 775px){
+    .createTripForm-container .createTripForm-subContainer{
+        flex-direction: column;
+    }
+
+    .createTripForm-numberInput {
+        margin: 8px 0px;
+    }
+}
+
+
+@media only screen and (min-width: 776px){
+
+    .createTripForm-numberInput {
+        margin: 8px 5px;
+    }
+}
+
+@media only screen and (max-width: 364px){
+
+
+    .createTripForm-cabinInfo > .createTripForm-propertyTab,
+    .createTripForm-cabinForm > .createTripForm-cabinInfo
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .createTripForm-cabinForm > .createTripForm-buttonContainer{
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+
+@media only screen and (max-width: 616px){
+
+    .createTripForm-cabinForm > .createTripForm-cabinName{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+
+    .createTripForm-cabinForm > .createTripForm-cabinInfo {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .createTripForm-cabinForm > input{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+
+    .createTripForm-cabinForm > .createTripForm-buttonContainer{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .createTripForm-buttonContainer > button{
+        width: 20%;
+    }
+
+
+    .createTripForm-cabinForm .createTripForm-textInput {
+        width: 80%;
+    }
+
+    .createTripForm-cabinForm > .createTripForm-cabinInfo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+}
+
+@media only screen and (min-width: 616px){
+
+    .createTripForm-cabinForm > .createTripForm-cabinName{
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .createTripForm-cabinForm > .createTripForm-cabinInfo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .createTripForm-cabinInfo > .createTripForm-propertyTab{
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        font-weight: bolder;
+    }
+
+
+    .createTripForm-cabinForm > .createTripForm-buttonContainer{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .createTripForm-buttonContainer > button{
+        width: 20%;
+    }
+
+    .createTripForm-cabinForm .createTripForm-textInput {
+        width: 80%;
+    }
+
+}
+
+@media only screen and (min-width: 800px){
+    .createTripForm-cabinForm .createTripForm-textInput {
+        width: 50%;
+    }
+}
+
+
+
+@media only screen and (min-width: 1000px){
+    .createTripForm-cabinForm .createTripForm-textInput {
+        width: 40%;
+    }
+}
+
+
+@media only screen and (min-width: 1000px){
+    .createTripForm-cabinForm > .createTripForm-cabinInfo {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+
+@media only screen and (max-width: 530px){
+
+    .createTripForm-confirmTab{
+        display: flex;
+        flex-wrap: wrap;
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 531px){
+
+    .createTripForm-confirmTab{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 364px){
+
+    .createTripForm-submitButton{
+        font-size: 11px;
+    }
+}
+
+.createTripForm-newTripBody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.createTripForm-container{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.createTripForm-title >h2{
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 36px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #2e82f4;
+}
+
+.createTripForm-container .createTripForm-addTripForm{
+    display: flex;
+    flex-direction: column;
+    grid-gap: 10px;
+    padding: 30px;
+    border: black px solid;
+    min-height: 100%;
+    /*background-color: rgba(46, 130, 244, 0.1);*/
+}
+
+.createTripForm-container .createTripForm-subContainer{
+    display: flex;
+}
+
+
+.createTripForm-cabinForm > div{
+    display: inline-block;
+}
+
+
+.createTripForm-cabinForm{
+    padding-left: 1px;
+    padding-right: 1px;
+    vertical-align: text-bottom;
+}
+
+.createTripForm-cabinInfo{
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+
+}
+
+.createTripForm-cabinInfo > input{
+    margin-right: 30px;
+}
+
+
+.createTripForm-cabinForm{
+    background-color: rgba(46, 130, 244,0.8);
+    border: black 1px solid;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.createTripForm-cabinForm .createTripForm-textInput {
+    padding: 12px 20px;
+    margin: 8px 10px;
+}
+
+.createTripForm-textInput {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+}
+
+.createTripForm-numberInput {
+    width: 100%;
+    padding: 11px 20px;
+    margin: 9px 0px;
+}
+
+
+
+.createTripForm-comment{
+    font-size: 16px;
+    resize: vertical;
+
+}
+.createTripForm-removeCabin{
+    border-radius: 6px;
+    margin: 5px;
+    border: 1px black solid;
+}
+.createTripForm-addCabin{
+    border-radius: 6px;
+    margin: 5px;
+    border: 1px black solid;
+}
+
+
+
+.createTripForm-confirmTab{
+    padding: 10px;
+    background-color: rgba(46, 130, 244,0.8);
+    border: black 1px solid;
+    border-radius: 5px;
+}
+
+.createTripForm-submitButton[disabled]{
+    background-color: white;
+    color: black;
+}
+
+.createTripForm-submitButton{
+    background-color: #044153;
+    color: white;
+    padding: 15px;
+    border: 1px solid black;
+    width: 90%;
+    text-transform: uppercase;
+    border-radius: 15px;
+}
+
+.createTripForm-privateTab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: white;
+    font-weight: bolder;
+}
+
+
+.createTripForm-buttonContainer > button{
+    font-size: large;
+}
+
+.createTripForm-formControl {
+    color: red;
+}
+
+.createTripForm-numericErrorWrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.createTripForm-commentControl{
+    display: flex;
+    flex-direction: column;
+    color: red;
+}
+

@@ -1,0 +1,18 @@
+
+.Trip-tripCardContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px;
+}
+
+.Trip-tripCardContainer > .Trip-tripCardContainerElement{
+    display: flex;
+    justify-content: center;
+}
+
+.Trip-gradesList{
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px;
+}

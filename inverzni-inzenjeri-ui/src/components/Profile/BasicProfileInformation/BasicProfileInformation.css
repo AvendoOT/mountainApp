@@ -1,0 +1,70 @@
+.basicProfileInformation-icon {
+    margin-top: 50px;
+    text-align: center;
+}
+.basicProfileInformation-info {
+    margin-top: 50px;
+    text-align: center;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+}
+.basicProfileInformation-badge {
+    margin-top: 50px;
+    text-align: center;
+    max-height: 300px;
+}
+.basicProfileInformation-nameSurname {
+    font-size: 40px;
+    margin: 12px;
+    margin-bottom: 20px;
+}
+.basicProfileInformation-username {
+    font-size: large;
+    color: grey;
+    margin: 12px;
+}
+.basicProfileInformation-email {
+    font-size: large;
+    margin: 12px;
+}
+.basicProfileInformation-role {
+    font-size: large;
+    margin: 12px;
+}
+
+@media only screen and (max-width: 775px){
+    .basicProfileInformation-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .basicProfileInformation-icon {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .basicProfileInformation-info {
+        margin-left: 0px;
+        margin-right: 0px;
+        border-left: unset;
+        border-right: unset;
+    }
+    .basicProfileInformation-badge {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+@media only screen and (min-width: 775px){
+    .basicProfileInformation-container {
+        display: flex;
+        flex-direction: row;
+    }
+    .basicProfileInformation-icon {
+        flex-grow: 1;
+    }
+    .basicProfileInformation-info {
+        flex-grow: 2;
+    }
+    .basicProfileInformation-badge {
+        flex-grow: 1;
+    }
+}

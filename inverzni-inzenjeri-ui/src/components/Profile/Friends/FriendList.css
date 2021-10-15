@@ -1,0 +1,63 @@
+@media (max-width: 575px) {
+    .friendListWrapper {
+        width: 90%;
+        position: relative;
+        left: 50%;
+        margin-left: -45%;
+        top: 10px;
+    }
+    .ui.card > .content, .ui.cards > .card > .content {
+        max-width: 70%;
+    }
+}
+
+@media (min-width: 576px) {
+    .friendListWrapper {
+        width: 90%;
+        position: relative;
+        left: 50%;
+        margin-left: -45%;
+        top: 10px;
+    }
+    .ui.card > .content, .ui.cards > .card > .content {
+        max-width: 78%;
+    }
+}
+
+@media (min-width: 768px) {
+    .friendListWrapper {
+        width: 40%;
+        position: relative;
+        left: 50%;
+        margin-left: -20%;
+        top: 10px;
+    }
+    .ui.card > .content, .ui.cards > .card > .content {
+        max-width: 82%;
+    }
+}
+
+.friendListWrapper .ui.card.Friend-card {
+    width: 100%;
+    height: 45px;
+}
+
+.friendListWrapper .ui.card, .ui.cards > .card {
+    flex-direction: row;
+}
+
+.friendListWrapper .ui.card > .content > .header:not(.ui), .ui.cards > .card > .content > .header:not(.ui) {
+    padding-top: 5px;
+    word-wrap: break-word;
+    font-size: 1rem;
+}
+
+.friendListWrapper .card {
+    text-align: left;
+}
+
+
+
+.friendListWrapper .cardDescriptionWrapper {
+    padding: 10px;
+}

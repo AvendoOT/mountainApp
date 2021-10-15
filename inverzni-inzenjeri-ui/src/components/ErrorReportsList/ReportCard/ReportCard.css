@@ -1,0 +1,30 @@
+.ReportCard-report{
+    font-size: medium;
+    margin: 15px 15px 15px 30px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+
+    border: 1px solid #282c34;
+    border-radius: 8px;
+}
+
+.ReportCard-notification{
+    margin-right: 15px;
+}
+
+.ReportCard-bold{
+    font-weight: bold;
+}
+
+.ReportCard-removeButton{
+    padding: 5px;
+    border-width: 0;
+    color: white;
+    font-size: xx-small;
+    border-radius: 45%;
+    background-color: rgba(00, 00, 00,0.5);
+
+}

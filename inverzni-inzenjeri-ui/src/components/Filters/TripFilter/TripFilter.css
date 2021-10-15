@@ -1,0 +1,126 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.Collapsible{
+    margin-bottom: 40px;
+    margin-left: 30px;
+}
+
+.Collapsible__trigger:hover {
+    cursor: pointer;
+}
+
+.Collapsible__contentOuter{
+    margin: 0px;
+}
+
+.Collapsible__trigger{
+    position: relative;
+    top: 28px;
+    right: 23px;
+    border-radius: 4px;
+    background-color: #2e82f4;
+    color: white;
+    padding: 7px 3%;
+    font-size: 16px;
+    width: 10%;
+}
+
+.centered {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 15px;
+}
+
+.textField {
+    margin-left: 10%;
+    display: block;
+    width: 60%;
+    height: 34px;
+    transition: 0.5s;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding-left: 8px;
+    box-sizing: border-box;
+}
+
+.textField:focus {
+    display: block;
+    box-sizing: border-box;
+    width: 70%;
+    transition: 0.5s;
+    height: 34px;
+    border: 1px solid #2e82f4;
+    border-radius: 4px;
+    padding-left: 8px;
+}
+
+.from{
+    margin-left: 5%;
+}
+
+.numberBar{
+    display: inline;
+    width: 6%;
+    height: 34px;
+    transition: 0.5s;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding-left: 8px;
+    box-sizing: border-box;
+}
+
+.numberBar:focus {
+    display: inline;
+    box-sizing: border-box;
+    width: 8%;
+    transition: 0.5s;
+    height: 34px;
+    border: 1px solid #2e82f4;
+    border-radius: 4px;
+    padding-left: 8px;
+}
+
+#minimalDuration{
+    margin-left: 12%;
+}
+
+#submit{
+    margin-left: 3%;
+    border-radius: 4px;
+    width: auto;
+    background-color: #2e82f4;
+    border: none;
+    color: white;
+    padding: 7px 2%;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+#submit:hover {
+    cursor: pointer;
+}
+
+.error{
+    display: block;
+    color: red;
+    margin-left: 30%;
+}
+
+@media only screen and (max-width: 1000px) {
+    .numberBar{
+        width: 7%;
+    }
+    .numberBar:focus{
+        width: 17%;
+    }
+}

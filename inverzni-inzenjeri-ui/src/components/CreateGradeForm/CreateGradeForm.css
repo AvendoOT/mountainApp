@@ -1,0 +1,41 @@
+.CreateGradeForm-mainContainer{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.CreateGradeForm-toggleButton{
+    border: 1px solid;
+    margin: 5px;
+    padding: 5px;
+    font-size: 14px;
+    color: white;
+    background-color: #2e82f4;
+    border-radius: 10px;
+    outline: none;
+}
+
+.CreateGradeForm-gradeInput{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+}
+
+.CreateGradeForm-textArea{
+    resize: vertical;
+    display: flex;
+    flex-direction: column;
+    width: 255px;
+}
+.CreateGradeForm-submitButton{
+    font-size: small;
+    width: 50%;
+    margin: 5px auto;
+    border-radius: 5px;
+}
+.CreateGradeForm-toggleButton:focus {
+    background-color: #044153;
+}

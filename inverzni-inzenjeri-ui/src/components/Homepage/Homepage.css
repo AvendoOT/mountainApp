@@ -1,0 +1,29 @@
+.Homepage-trips{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Homepage-subTitle{
+    font-size: xx-large;
+    margin: 0 auto;
+}
+.Homepage-subContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding: 30px;
+}
+
+.Homepage-container{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px auto;
+}
+.Homepage-card{
+    margin: 5px;
+}

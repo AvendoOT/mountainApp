@@ -1,0 +1,43 @@
+@media (max-width: 575px) {
+    .tripSignUpRequestsCenter {
+        width: 90%;
+        left: 50%;
+        margin-left: -45%;
+        position: absolute;
+    }
+}
+
+@media (min-width: 576px) {
+    .tripSignUpRequestsCenter {
+        width: 90%;
+        left: 50%;
+        margin-left: -45%;
+        position: absolute;
+    }
+}
+
+@media (min-width: 768px) {
+    .tripSignUpRequestsCenter {
+        width: 50%;
+        left: 50%;
+        margin-left: -25%;
+        position: absolute;
+
+    }
+}
+
+.tripSignUpRequestsLabel {
+    color: #2e82f4;
+    font-size: 22px;
+    text-align: center;
+    margin: 10px;
+}
+
+.tripSignUpRequestsCenter .ui.card, .ui.cards > .card {
+    width: 100%;
+}
+
+.tripSignUpRequestsCenter .ui.card {
+    margin-bottom: 5px;
+    margin-top: 0px;
+}

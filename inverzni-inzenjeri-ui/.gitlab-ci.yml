@@ -1,0 +1,15 @@
+stages:
+  - deploy
+
+deploy-prod:
+  stage: deploy
+  script:
+    - git config --global user.email "leon.kranjcevic@fer.hr";
+      git config --global user.name "leon.kranjcevic@fer.hr";
+      cd ./inverzni-inzenjeri-ui;
+      git init;
+      git add .;
+      git commit -m "heroku deploy";
+      git push -f https://$HEROKU_USER:10457204-9a01-48dc-aaf9-a2c52a10dbef@git.heroku.com/$HEROKU_APP_STAGING_2.git HEAD:master
+  only:
+    - development

@@ -1,0 +1,22 @@
+stages:
+  - build
+  - deploy
+
+build-and-test:
+  image: maven:latest
+  stage: build
+  script:
+    - mvn package
+  only:
+    - merge_requests
+
+deploy-prod:
+  stage: deploy
+  script:
+    - cd ./inverzni-inzenjeri-api
+    - apt-get update -yq
+    - apt-get install -y ruby-dev
+    - gem install dpl
+    - dpl --provider=heroku --app=$HEROKU_APP_STAGING_1 --api-key=10457204-9a01-48dc-aaf9-a2c52a10dbef
+  only:
+    - development

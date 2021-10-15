@@ -1,0 +1,32 @@
+.CreateErrorReport-mainContainer{
+    width: 250px;
+    display: flex;
+    justify-content: center;
+}
+.CreateErrorReport-toggleButton{
+    border: 1px solid;
+    margin: 5px;
+    padding: 5px;
+    font-size: 14px;
+    color: white;
+    background-color: #2e82f4;
+    border-radius: 10px;
+    outline: none;
+}
+
+.CreateErrorReport-textArea{
+    resize: vertical;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.CreateErrorReport-submitButton{
+    font-size: small;
+    width: 50%;
+    margin: 5px auto;
+    border-radius: 5px;
+}
+.CreateErrorReport-toggleButton:focus{
+    background-color: #044153;
+}

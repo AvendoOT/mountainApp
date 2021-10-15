@@ -1,0 +1,14 @@
+.GradeCard-userName{
+    font-weight: bold;
+    margin:5px 10px 8px;
+}
+
+.GradeCard-container{
+    border: 1px solid;
+    border-radius: 10px;
+    margin: 5px 0px;
+}
+
+.GradeCard-data{
+    margin: 5px 10px;
+}

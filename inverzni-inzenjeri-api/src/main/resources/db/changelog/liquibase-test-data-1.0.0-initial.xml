@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="20200211" author="abukovac">
+        <comment>
+            Filled database with mock data
+        </comment>
+
+        <insert tableName="area">
+            <column name="id">1</column>
+            <column name="name">Lička Plješevica</column>
+        </insert>
+        <insert tableName="area">
+            <column name="id">2</column>
+            <column name="name">Sjeverni Velebit</column>
+        </insert>
+        <insert tableName="area">
+            <column name="id">3</column>
+            <column name="name">Srednji Velebit</column>
+        </insert>
+        <insert tableName="area">
+            <column name="id">4</column>
+            <column name="name">Dalmacija</column>
+        </insert>
+        <insert tableName="area">
+            <column name="id">5</column>
+            <column name="name">Istra</column>
+        </insert>
+        <insert tableName="area">
+            <column name="id">6</column>
+            <column name="name">Dubrovačko područje</column>
+        </insert>
+        <insert tableName="area">
+            <column name="id">7</column>
+            <column name="name">Hrvatsko Zagorje i Međimurje</column>
+        </insert>
+        <insert tableName="area">
+            <column name="id">8</column>
+            <column name="name">Medvednica</column>
+        </insert>
+        <insert tableName="area">
+            <column name="id">9</column>
+            <column name="name">Slavonija</column>
+        </insert>
+        <insert tableName="area">
+            <column name="id">10</column>
+            <column name="name">Jadranski otoci-južni dio</column>
+        </insert>
+        <insert tableName="area">
+            <column name="id">11</column>
+            <column name="name">Dalmatinska zagora</column>
+        </insert>
+
+        <insert tableName="trip">
+            <column name="id">1</column>
+            <column name="peak">Ozeblin</column>
+            <column name="duration">210</column>
+            <column name="length">9.6</column>
+            <column name="difficulty">1</column>
+            <column name="description">Kuk » Ozeblin.
+                Osim dijela s prevrnutim stablima, staza je vrlo ugodna.
+                S vrha je lijep pogled, neometan u svim smjerovima
+            </column>
+            <column name="local">FALSE</column>
+            <column name="trip_area_id">1</column>
+            <column name="creator_id">1</column>
+        </insert>
+
+        <insert tableName="trip">
+            <column name="id">2</column>
+            <column name="peak">Skorpovac</column>
+            <column name="duration">180</column>
+            <column name="length">7.1</column>
+            <column name="difficulty">1</column>
+            <column name="description">Dabranska Kosa » Skorpovac .
+                Staza je jednostavna i ugodna za planinarenje, a u cijelosti prolazi južnom padinom Velebita.
+            </column>
+            <column name="local">FALSE</column>
+            <column name="trip_area_id">3</column>
+            <column name="creator_id">1</column>
+        </insert>
+
+        <insert tableName="trip">
+            <column name="id">3</column>
+            <column name="peak">Šatorina</column>
+            <column name="duration">210</column>
+            <column name="length">9.5</column>
+            <column name="difficulty">1</column>
+            <column name="description">Štirovača » Dokozina Plan » PS Ograđenica » Matijević Brijeg » Šatorina
+                Lagana staza s lijepim pogledom.
+                Ima jedno planinarsko sklonište sa četiri ležaja, ali je neuredno.
+                Završni uspon na vrh je malo strmiji ali nije jako zamoran jer je relativno kratak.
+            </column>
+            <column name="local">FALSE</column>
+            <column name="trip_area_id">3</column>
+            <column name="creator_id">1</column>
+        </insert>
+
+        <insert tableName="trip">
+            <column name="id">4</column>
+            <column name="peak">Laktin Vrh</column>
+            <column name="duration">90</column>
+            <column name="length">3.1</column>
+            <column name="difficulty">3</column>
+            <column name="description">Kugina kuća » Laktin vrh
+                Većina staze je kroz visoku bukovu šumu.
+                Jedno vrijeme staza vodi po grebenu kroz visoku bukovu šumu, izlazi na travnatu golet, pa po njoj do vrha.
+                S vrha se pružaju lijepi vidici u svim smjerovima.
+            </column>
+            <column name="local">FALSE</column>
+            <column name="trip_area_id">3</column>
+            <column name="creator_id">1</column>
+        </insert>
+
+        <insert tableName="trip">
+            <column name="id">5</column>
+            <column name="peak">Sinjal</column>
+            <column name="duration">300</column>
+            <column name="length">18.4</column>
+            <column name="difficulty">3</column>
+            <column name="description">Guge » Suho Polje » Badanj » PD Brezovac » Duler » Samar » Vrh Sinjal
+                Jako dugačka staza, ali nije previše zahtjevna (osim same dužine staze).
+                Putem se nalazi PD Brezovac gdje se može prenoćiti, a moguća je i opskrba jelom i pićem uz raniji dogovor.
+            </column>
+            <column name="local">FALSE</column>
+            <column name="trip_area_id">11</column>
+            <column name="creator_id">1</column>
+        </insert>
+
+        <insert tableName="trip">
+            <column name="id">6</column>
+            <column name="peak">Sveti Nikola</column>
+            <column name="duration">120</column>
+            <column name="length">6.2</column>
+            <column name="difficulty">2</column>
+            <column name="description">Hvar » Tunel » Sveti Nikola
+                Najviši vrh otoka Hvara.
+                Na vrhu se nalazi kapelica sv. Nikole iz 15. stoljeća i veliki kameni križ.
+                S vrha se pružaju nezaboravni vidici u svim smjerovima.
+            </column>
+            <column name="local">FALSE</column>
+            <column name="trip_area_id">10</column>
+            <column name="creator_id">1</column>
+        </insert>
+
+        <insert tableName="trip">
+            <column name="id">7</column>
+            <column name="peak">Ivančica</column>
+            <column name="duration">105</column>
+            <column name="length">5.8</column>
+            <column name="difficulty">3</column>
+            <column name="description">Belec » Mrzljak » Ivanščica
+                Ukratko Ivanščica je izuzetna planina za ugodne šetnje i planinarenja s blagih južnijih strana od Budinščine, Zlatara i Lobora, te strmih sa sjevera iz Ivanca i Lepoglave.
+                Danas ujedno jedna od najposjećenijih planinarskih destinacija.
+                Bogata velikim prostranstvima šuma, prekrasnih gorskih livada te potoka.
+            </column>
+            <column name="local">FALSE</column>
+            <column name="trip_area_id">7</column>
+            <column name="creator_id">1</column>
+        </insert>
+
+        <insert tableName="trip">
+            <column name="id">8</column>
+            <column name="peak">Vrani Kamen</column>
+            <column name="duration">105</column>
+            <column name="length">7.8</column>
+            <column name="difficulty">4</column>
+            <column name="description">Papuk » PD Petrov Vrh » Vrani Kamen
+                Vrhovi kamenih gromada izdižu se i preko 800 m nadmorske visine.
+                Na tom kamenu nalazi se metalni tuljak s upisnom knjigom i dva žiga.
+            </column>
+            <column name="local">FALSE</column>
+            <column name="trip_area_id">9</column>
+            <column name="creator_id">1</column>
+        </insert>
+
+        <insert tableName="trip">
+            <column name="id">9</column>
+            <column name="peak">Papuk</column>
+            <column name="duration">150</column>
+            <column name="length">9.8</column>
+            <column name="difficulty">2</column>
+            <column name="description">Papuk » Velika » Vrh Papuk
+                Početna točka uspona je u Velikoj u ulici Luke Ibrišimovića.
+                Planinarska staza najprije ide kroz prohodnu šikaru, zatim se oštrije penje prema ogradi od kamenoloma, ide uz ogradu, izlazi na ugodnu, dobro označenu šumsku stazu.
+                Na vrhu je radarska stanica u ograđenom prostoru, kojeg čuva Hrvatska Vojska.
+                Pogled s ove točke je otvoren prema istoku i lijepo se vidi vrh Ivačka Glava.
+            </column>
+            <column name="local">FALSE</column>
+            <column name="trip_area_id">9</column>
+            <column name="creator_id">1</column>
+        </insert>
+
+        <insert tableName="trip">
+            <column name="id">10</column>
+            <column name="peak">Sljeme</column>
+            <column name="duration">540</column>
+            <column name="length">50.9</column>
+            <column name="difficulty">5</column>
+            <column name="description">Podsused-Kameni » Svati-PD » Glavica-1M-Ponikve-Slap » Sopot-PD Risnjak-PD » Grafičar-Sljeme-PD » Hunjka-PD » Gorščica-Lipa-PD » Vugrovec.
+                Naziva se još i "Paninarska staza 1M"
+                Održava je planinarsko društvo Sljeme. Veliki broj drugih planinarskih staza sa zagorske i prigorske (zagrebačke) strane vode iz podnožja Medvednice i priključuje se na nju.
+                Prihvatite izazov, prođite ovu lijepu planinarsku stazu a ona će vas nagraditi lijepom uspomenom, koju nikada nećete zaboraviti.
+            </column>
+            <column name="local">FALSE</column>
+            <column name="trip_area_id">8</column>
+            <column name="creator_id">1</column>
+        </insert>
+
+        <insert tableName="trip">
+            <column name="id">11</column>
+            <column name="peak">Sljeme</column>
+            <column name="duration">135</column>
+            <column name="length">7.4</column>
+            <column name="difficulty">3</column>
+            <column name="description">Talani » Risnjak » Grafičar » Sljeme
+                Staza je popularna i često korištena od strane planinara što znači da ćete tu sresti mnoge planinare i rekreativce, a vole je i biciklisti koji voze šumom.
+                Kasnije prije Risnjaka je uža i tipično šumska, ali bez pretjeranih uspona.
+                Planinarska staza gotovo cijelo vrijeme ide kroz šumu. Jedini vidici, prema jugu i jugozapadu, pružaju se od PD „Risnjak“.
+                Staza je lagana, mekana i ugodna za hodanje.
+            </column>
+            <column name="local">FALSE</column>
+            <column name="trip_area_id">8</column>
+            <column name="creator_id">1</column>
+        </insert>
+
+        <insert tableName="trip">
+            <column name="id">12</column>
+            <column name="peak">Sušec</column>
+            <column name="duration">135</column>
+            <column name="length">7.8</column>
+            <column name="difficulty">4</column>
+            <column name="description">Strahinjčica » Strahinje » Sušec
+                U ovom planinarskom izletu odabran je smijer uspona preko sela Strahinje.
+                Putem se nalazi PD Jelenske pećine gdje se može okrijepiti.
+                Vrh Sušec se nalazi u šumi i sa njega nema nikakvih vidika.
+            </column>
+            <column name="local">FALSE</column>
+            <column name="trip_area_id">7</column>
+            <column name="creator_id">1</column>
+        </insert>
+
+        <insert tableName="trip">
+            <column name="id">13</column>
+            <column name="peak">Veliki Planik</column>
+            <column name="duration">90</column>
+            <column name="length">5.4</column>
+            <column name="difficulty">4</column>
+            <column name="description">Brgudac » Korita » Veliki Planik
+                Staza je lijepo uređena. Prvi dio staze je kamenit, vodi kroz gustu bjelogoričnu šumu.
+                Vrh je s istočne strane travnat, dok je s drugih strana šumovit.
+                Vidik s vrha je otvoren prema istoku i jugoistoku, a posebno je upečatljiv na Učku.
+            </column>
+            <column name="local">FALSE</column>
+            <column name="trip_area_id">5</column>
+            <column name="creator_id">1</column>
+        </insert>
+
+        <insert tableName="trip">
+            <column name="id">14</column>
+            <column name="peak">Veliki Planik</column>
+            <column name="duration">120</column>
+            <column name="length">7.5</column>
+            <column name="difficulty">1</column>
+            <column name="description">PD Poklon » Veliki Planik
+                Kreće se od PD Poklon.
+                Staza nije zahtjevna.
+                Kreće lagano šumskom cestom. U nastavku uspon ide gore-dolje nekoliko puta.
+                Kasnije dolazi dionica gdje staza izlazi iz šume i na gole travnate padine.
+                Prije samog vrha je malo oštriji uspon.
+            </column>
+            <column name="local">FALSE</column>
+            <column name="trip_area_id">5</column>
+            <column name="creator_id">2</column>
+        </insert>
+
+        <insert tableName="trip">
+            <column name="id">15</column>
+            <column name="peak">Ilijin Vrh</column>
+            <column name="duration">75</column>
+            <column name="length">4.5</column>
+            <column name="difficulty">3</column>
+            <column name="description">Kuna » Ilijin Vrh
+                Od planinarskog doma vodi markirana planinarska staza, najprije kroz selo,
+                a nakon toga po malo oštrijem usponu vodi između ograda omeđenih suhozidom do dva zidana bunara.
+                Sa vrha se pružaju prekrasni vidici na sve strane ničim ne ometani.
+            </column>
+            <column name="local">FALSE</column>
+            <column name="trip_area_id">6</column>
+            <column name="creator_id">2</column>
+        </insert>
+
+        <insert tableName="trip">
+            <column name="id">16</column>
+            <column name="peak">Ilijin Vrh</column>
+            <column name="duration">105</column>
+            <column name="length">6.5</column>
+            <column name="difficulty">3</column>
+            <column name="description">Mihanići » Kuna » Ilijin Vrh
+                Ishodište za uspon na Sniježnicu je naselje Mihanići.
+                Od početne točke započinje oštriji uspon po građenoj stazi, koja je djelomično zapuštena i zarasla u makiju, do sela Kune Konavoske.
+                U ovom selu, u napuštenoj osnovnoj školi, nalazi se planinarski dom.
+                S vrha se pružaju prekrasni vidici na sve strane ničim ne ometani
+            </column>
+            <column name="local">FALSE</column>
+            <column name="trip_area_id">6</column>
+            <column name="creator_id">2</column>
+        </insert>
+
+
+        <insert tableName="mountain_cabin">
+            <column name="id">1</column>
+            <column name="name">PS Ograđenica</column>
+            <column name="sleep">TRUE</column>
+            <column name="eat">FALSE</column>
+            <column name="water">FALSE</column>
+            <column name="power">FALSE</column>
+        </insert>
+        <insert tableName="mountain_cabin">
+            <column name="id">2</column>
+            <column name="name">PK Kugina kuća</column>
+            <column name="sleep">TRUE</column>
+            <column name="eat">FALSE</column>
+            <column name="water">TRUE</column>
+            <column name="power">FALSE</column>
+        </insert>
+        <insert tableName="mountain_cabin">
+            <column name="id">3</column>
+            <column name="name">PD Umberto Girometta</column>
+            <column name="sleep">TRUE</column>
+            <column name="eat">TRUE</column>
+            <column name="water">TRUE</column>
+            <column name="power">TRUE</column>
+        </insert>
+        <insert tableName="mountain_cabin">
+            <column name="id">4</column>
+            <column name="name">Privatne kuća</column>
+            <column name="sleep">TRUE</column>
+            <column name="eat">FALSE</column>
+            <column name="water">TRUE</column>
+            <column name="power">FALSE</column>
+        </insert>
+        <insert tableName="mountain_cabin">
+            <column name="id">5</column>
+            <column name="name">PD Poklon</column>
+            <column name="sleep">TRUE</column>
+            <column name="eat">TRUE</column>
+            <column name="water">TRUE</column>
+            <column name="power">TRUE</column>
+        </insert>
+        <insert tableName="mountain_cabin">
+            <column name="id">6</column>
+            <column name="name">Škola kuna Konavoska</column>
+            <column name="sleep">FALSE</column>
+            <column name="eat">FALSE</column>
+            <column name="water">TRUE</column>
+            <column name="power">TRUE</column>
+        </insert>
+        <insert tableName="mountain_cabin">
+            <column name="id">7</column>
+            <column name="name">Pasarićeva kuća</column>
+            <column name="sleep">TRUE</column>
+            <column name="eat">TRUE</column>
+            <column name="water">TRUE</column>
+            <column name="power">TRUE</column>
+        </insert>
+
+        <insert tableName="mountain_cabin">
+            <column name="id">8</column>
+            <column name="name">PD Strahinjčica</column>
+            <column name="sleep">TRUE</column>
+            <column name="eat">TRUE</column>
+            <column name="water">TRUE</column>
+            <column name="power">TRUE</column>
+        </insert>
+        <insert tableName="mountain_cabin">
+            <column name="id">9</column>
+            <column name="name">PD Risnjak</column>
+            <column name="sleep">TRUE</column>
+            <column name="eat">TRUE</column>
+            <column name="water">TRUE</column>
+            <column name="power">TRUE</column>
+        </insert>
+        <insert tableName="mountain_cabin">
+            <column name="id">10</column>
+            <column name="name">Grafičar</column>
+            <column name="sleep">TRUE</column>
+            <column name="eat">TRUE</column>
+            <column name="water">TRUE</column>
+            <column name="power">TRUE</column>
+        </insert>
+        <insert tableName="mountain_cabin">
+            <column name="id">11</column>
+            <column name="name">Kameni svati</column>
+            <column name="sleep">TRUE</column>
+            <column name="eat">FALSE</column>
+            <column name="water">TRUE</column>
+            <column name="power">TRUE</column>
+        </insert>
+
+        <insert tableName="trip_cabin">
+            <column name="trip_id">3</column>
+            <column name="cabin_id">1</column>
+        </insert>
+        <insert tableName="trip_cabin">
+            <column name="trip_id">4</column>
+            <column name="cabin_id">2</column>
+        </insert>
+        <insert tableName="trip_cabin">
+            <column name="trip_id">7</column>
+            <column name="cabin_id">7</column>
+        </insert>
+        <insert tableName="trip_cabin">
+            <column name="trip_id">10</column>
+            <column name="cabin_id">9</column>
+        </insert>
+        <insert tableName="trip_cabin">
+            <column name="trip_id">10</column>
+            <column name="cabin_id">10</column>
+        </insert>
+        <insert tableName="trip_cabin">
+            <column name="trip_id">10</column>
+            <column name="cabin_id">11</column>
+        </insert>
+        <insert tableName="trip_cabin">
+            <column name="trip_id">11</column>
+            <column name="cabin_id">9</column>
+        </insert>
+        <insert tableName="trip_cabin">
+            <column name="trip_id">11</column>
+            <column name="cabin_id">10</column>
+        </insert>
+        <insert tableName="trip_cabin">
+            <column name="trip_id">12</column>
+            <column name="cabin_id">8</column>
+        </insert>
+        <insert tableName="trip_cabin">
+            <column name="trip_id">14</column>
+            <column name="cabin_id">5</column>
+        </insert>
+        <insert tableName="trip_cabin">
+            <column name="trip_id">16</column>
+            <column name="cabin_id">6</column>
+        </insert>
+
+        <insert tableName="app_user">
+            <column name="username">admin101</column>
+            <column name="password">$2y$12$ulm6G.PaIOZVjTVE97p/QOz3FtUDLA1x6u/KvaA6QGVnXqMThPkiS</column> <!-- password1 -->
+            <column name="first_Name">Admin</column>
+            <column name="last_Name">Adminović</column>
+            <column name="user_role">HIKER</column>
+            <column name="email">admin.adminovic@fer.hr</column>
+        </insert>
+    </changeSet>
+
+    <changeSet id="28-12-2020" author="tferkovic">
+        <insert tableName="app_user">
+            <column name="username">marko101</column>
+            <column name="password">$2y$12$ulm6G.PaIOZVjTVE97p/QOz3FtUDLA1x6u/KvaA6QGVnXqMThPkiS</column> <!-- password1 -->
+            <column name="first_Name">Marko</column>
+            <column name="last_Name">Markić</column>
+            <column name="user_role">HIKER</column>
+            <column name="email">marko.markic@fer.hr</column>
+        </insert>
+
+        <insert tableName="app_user">
+            <column name="username">hrvoje101</column>
+            <column name="password">$2y$12$ulm6G.PaIOZVjTVE97p/QOz3FtUDLA1x6u/KvaA6QGVnXqMThPkiS</column> <!-- password1 -->
+            <column name="first_Name">Hrvoje</column>
+            <column name="last_Name">Hrvojić</column>
+            <column name="user_role">HIKER</column>
+            <column name="email">hrvoje.hrvojic@fer.hr</column>
+        </insert>
+
+        <!--add mock data representing trips which some users have already done-->
+
+        <insert tableName="user_trip">
+            <column name="trip_id">7</column>
+            <column name="user_id">1</column>
+        </insert>
+
+        <insert tableName="user_trip">
+            <column name="trip_id">3</column>
+            <column name="user_id">1</column>
+        </insert>
+
+        <insert tableName="user_trip">
+            <column name="trip_id">10</column>
+            <column name="user_id">1</column>
+        </insert>
+
+        <insert tableName="user_trip">
+            <column name="trip_id">13</column>
+            <column name="user_id">1</column>
+        </insert>
+
+        <insert tableName="user_trip">
+            <column name="trip_id">4</column>
+            <column name="user_id">3</column>
+        </insert>
+
+        <insert tableName="user_trip">
+            <column name="trip_id">15</column>
+            <column name="user_id">3</column>
+        </insert>
+
+        <insert tableName="user_trip">
+            <column name="trip_id">14</column>
+            <column name="user_id">3</column>
+        </insert>
+
+        <insert tableName="user_trip">
+            <column name="trip_id">13</column>
+            <column name="user_id">3</column>
+        </insert>
+
+        <insert tableName="user_trip">
+            <column name="trip_id">9</column>
+            <column name="user_id">3</column>
+        </insert>
+
+        <insert tableName="user_trip">
+            <column name="trip_id">5</column>
+            <column name="user_id">3</column>
+        </insert>
+
+        <insert tableName="user_trip">
+            <column name="trip_id">3</column>
+            <column name="user_id">3</column>
+        </insert>
+
+        <insert tableName="user_trip">
+            <column name="trip_id">1</column>
+            <column name="user_id">3</column>
+        </insert>
+    </changeSet>
+
+    <changeSet id="28-12-2020-v2" author="tferkovic">
+        <insert tableName="friends">
+            <column name="user_id">1</column>
+            <column name="friend_id">2</column>
+        </insert>
+        <insert tableName="friends">
+            <column name="user_id">2</column>
+            <column name="friend_id">1</column>
+        </insert>
+        <insert tableName="friends">
+            <column name="user_id">1</column>
+            <column name="friend_id">3</column>
+        </insert>
+        <insert tableName="friends">
+            <column name="user_id">3</column>
+            <column name="friend_id">1</column>
+        </insert>
+    </changeSet>
+
+
+    <changeSet id="29-12-2020" author="abukovac">
+
+        <comment>
+            Added reports to test ErrorReport
+            Added new user: admin102
+        </comment>
+
+        <insert tableName="app_user">
+            <column name="username">admin102</column>
+            <column name="password">$2a$10$oJig6GljMuwWf9UOloT7ZeUO2KG95A5dYiR9Oxr/rofF74JsLsHcG</column> <!-- password1 -->
+            <column name="first_Name">Admin</column>
+            <column name="last_Name">Admin2</column>
+            <column name="user_role">HIKER</column>
+            <column name="email">admin@fer.hr</column>
+        </insert>
+
+        <insert tableName="error_report">
+            <column name="id">1</column>
+            <column name="reporter_id">2</column>
+            <column name="trip_id">8</column>
+            <column name="explanation">Trajanje nije toliko nego je puno duže</column>
+
+        </insert>
+        <insert tableName="error_report">
+            <column name="id">2</column>
+            <column name="reporter_id">1</column>
+            <column name="trip_id">15</column>
+            <column name="explanation">Trajanje nije toliko nego je puno kraće</column>
+        </insert>
+        <insert tableName="error_report">
+            <column name="id">3</column>
+            <column name="reporter_id">1</column>
+            <column name="trip_id">16</column>
+            <column name="explanation">Izlet je teži nego je rečeno</column>
+        </insert>
+
+        <insert tableName="receiver_report">
+            <column name="receiver_id">2</column>
+            <column name="report_id">3</column>
+        </insert>
+        <insert tableName="receiver_report">
+            <column name="receiver_id">1</column>
+            <column name="report_id">1</column>
+        </insert>
+        <insert tableName="receiver_report">
+            <column name="receiver_id">2</column>
+            <column name="report_id">2</column>
+        </insert>
+
+
+    </changeSet>
+
+    <changeSet id="6-1-2020" author="tferkovic">
+        <insert tableName="trip_user">
+            <column name="trip_id">1</column>
+            <column name="user_id">3</column>
+        </insert>
+        <insert tableName="trip_user">
+            <column name="trip_id">3</column>
+            <column name="user_id">1</column>
+        </insert>
+        <insert tableName="trip_user">
+            <column name="trip_id">3</column>
+            <column name="user_id">3</column>
+        </insert>
+        <insert tableName="trip_user">
+            <column name="trip_id">4</column>
+            <column name="user_id">3</column>
+        </insert>
+        <insert tableName="trip_user">
+            <column name="trip_id">5</column>
+            <column name="user_id">3</column>
+        </insert>
+        <insert tableName="trip_user">
+            <column name="trip_id">7</column>
+            <column name="user_id">1</column>
+        </insert>
+        <insert tableName="trip_user">
+            <column name="trip_id">9</column>
+            <column name="user_id">3</column>
+        </insert>
+        <insert tableName="trip_user">
+            <column name="trip_id">10</column>
+            <column name="user_id">1</column>
+        </insert>
+        <insert tableName="trip_user">
+            <column name="trip_id">13</column>
+            <column name="user_id">1</column>
+        </insert>
+        <insert tableName="trip_user">
+            <column name="trip_id">13</column>
+            <column name="user_id">3</column>
+        </insert>
+        <insert tableName="trip_user">
+            <column name="trip_id">14</column>
+            <column name="user_id">3</column>
+        </insert>
+        <insert tableName="trip_user">
+            <column name="trip_id">15</column>
+            <column name="user_id">3</column>
+        </insert>
+    </changeSet>
+
+    <changeSet id="7-1-2020-tin" author="tferkovic">
+        <insert tableName="app_user">
+            <column name="username">actualadmin</column>
+            <column name="password">$2y$12$ulm6G.PaIOZVjTVE97p/QOz3FtUDLA1x6u/KvaA6QGVnXqMThPkiS</column> <!-- password1 -->
+            <column name="first_Name">Tin</column>
+            <column name="last_Name">Ferković</column>
+            <column name="user_role">ADMIN</column>
+            <column name="email">tin.ferkovic@fer.hr</column>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>
